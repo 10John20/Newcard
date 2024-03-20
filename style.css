@@ -1,3 +1,49 @@
-body {
-    font-size: 28pt;
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    color: red;
+    text-align: center;
 }
+p {
+  
+  font-size:50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 335px;
+    height: 335px;
+    border: 5px solid yellowgreen;
+    margin-bottom: 80px;
+    justify-content: center;
+    margin-inline-start: 90px;
+    
+}
+@keyframes lunarAnimation {
+    0% { background-color: darkblue; }
+    25% { background-color: blueviolet; }
+    30% { background-color: deeppink; }
+    35% { background-color: indianred; }
+    50% { background-color: darkcyan; }
+}
+
+body {
+    animation: lunarAnimation 1s infinite;
+}
+
+ @media screen and (min-width: 1024px) {
+    .container {
+        justify-content: center;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+}
+ 
