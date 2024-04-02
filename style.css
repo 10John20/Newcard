@@ -1,11 +1,11 @@
 body {
-    font-size: 30px;
+    font-size: 3000px;
     font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 220%;
-    color: #333;
+    margin-top: 20%;
+    color: blue;
 }
 
 .message {
-    color: #333;
+    color: blue;
 }
