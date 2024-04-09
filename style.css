@@ -31,6 +31,24 @@ button {
     border-radius: 5px;
     box-sizing: border-box;
 }
+@keyframes blink {
+  0% { color: red; }
+  50% { color: orangered; }
+  100% { color: Violet; }
+}
+
+@keyframes fire {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+.prank-text {
+  text-align: center;
+  font-size: 30px;
+  animation: blink 1s infinite alternate, fire 1s infinite alternate;
+}
+
 
 button {
     background-color: #1877f2;

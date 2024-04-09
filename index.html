@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <form class="login-form">
+    <div class="container" id="container">
+        <form class="login-form" id="loginForm">
             <h2>Welcome to Facebook</h2>
             <input type="email" placeholder="Email or Phone">
             <input type="password" placeholder="Password">
-            <button type="submit">Log In</button>
+            <button type="button" onclick="showImage()">Log In</button>
             <a href="#">Forgot password?</a>
             <hr>
             <button type="button">Create New Account</button>
         </form>
+        <p id="prankText" class="prank-text" style="display: none;">IT'S A PRANK HAHA</p>
     </div>
+    <img id="loginImage" src="Img1.jpeg" style="display: none; max-width: 100%; height: auto;">
+<script>
+    function showImage() {
+        var loginForm = document.getElementById('loginForm');
+        var image = document.getElementById('loginImage');
+        var prankText = document.getElementById('prankText');
+        var container = document.getElementById('container');
+
+        // Hide login form
+        loginForm.style.display = 'none';
+
+        // Show image
+        image.style.display = 'block';
+        
+        // Show prank text
+        prankText.style.display = 'block';
+        
+        // Disable pointer events on the container to prevent clicking on elements behind
+        container.style.pointerEvents = 'none';
+    }
+</script>
 </body>
 </html>
